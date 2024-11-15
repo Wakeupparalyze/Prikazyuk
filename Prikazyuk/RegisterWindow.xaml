@@ -1,0 +1,22 @@
+﻿<Window x:Class="Prikazyuk.RegisterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prikazyuk"
+        mc:Ignorable="d"
+        Title="RegisterWindow" Background="Gray" Height="450" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Регистрация"/>
+            <Label Content="Имя"/>
+            <TextBox x:Name="NameTextBox"/>
+            <Label Content="Логин"/>
+            <TextBox Text="{Binding Login}"/>
+            <Label Content="Пароль"/>
+            <TextBox Text="{Binding Password}"/>
+            <Button Margin="0 30 0 10" Click="RegisterBtn" Content="Зарегистрироваться"/>
+            <Button Click="RegisterBackBtn" Content="Назад"/>
+        </StackPanel>
+    </Grid>
+</Window>
